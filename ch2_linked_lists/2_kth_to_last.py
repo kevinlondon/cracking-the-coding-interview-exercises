@@ -1,3 +1,6 @@
+from linked_lists import LinkedList, Node, debug
+
+
 def kth_to_last(linked_list, k):
     lead = 0
     head = linked_list.head
@@ -14,25 +17,6 @@ def kth_to_last(linked_list, k):
         return None
     else:
         return trailing
-
-
-class LinkedList:
-    def __init__(self, head):
-        self.head = head
-
-
-class Node:
-    def __init__(self, data, next=None):
-        self.data = data
-        self.next = next
-
-
-def debug(linked_list):
-    node = linked_list.head
-    print('Debugging')
-    while node != None:
-        print(node.data)
-        node = node.next
 
 
 last = Node(data='a')

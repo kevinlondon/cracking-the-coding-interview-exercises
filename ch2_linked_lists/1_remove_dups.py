@@ -1,3 +1,6 @@
+from linked_lists import LinkedList, Node, debug
+
+
 def remove_dups(linked_list):
     seen = {}
     last_node = None
@@ -12,25 +15,6 @@ def remove_dups(linked_list):
         node = node.next
 
     return linked_list
-
-
-class LinkedList:
-    def __init__(self, head):
-        self.head = head
-
-
-class Node:
-    def __init__(self, data, next=None):
-        self.data = data
-        self.next = next
-
-
-def debug(linked_list):
-    node = linked_list.head
-    print('Debugging')
-    while node != None:
-        print(node.data)
-        node = node.next
 
 
 last = Node(data='a')
